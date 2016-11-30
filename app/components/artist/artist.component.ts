@@ -9,14 +9,15 @@ import { SpotifyService } from '../../services/spotify.service';
     selector: 'artist',
     templateUrl: 'artist.component.html'
 })
-export class AritstComponent implements OnInit {
+export class ArtistComponent implements OnInit {
+    
     id: string;
     artist: Artist[];
     albums: Album[];
 
     constructor(
-        private _spotifyService:SpotifyService, 
-        private _route:ActivatedRoute) {
+        private _spotifyService: SpotifyService, 
+        private _route: ActivatedRoute) {
     
     }
 
